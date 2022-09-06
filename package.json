@@ -1,0 +1,34 @@
+{
+  "name": "mainstack-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
+    "@fontsource/plus-jakarta-sans": "^4.5.9",
+    "@mui/material": "^5.10.4",
+    "@tanstack/react-query": "^4.2.3",
+    "@tanstack/react-query-devtools": "^4.2.3",
+    "axios": "^0.27.2",
+    "clsx": "^1.2.1",
+    "mui-daterange-picker": "^1.0.5",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.15",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "typescript": "^4.8.2"
+  }
+}
