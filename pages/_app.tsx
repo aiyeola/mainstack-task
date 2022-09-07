@@ -10,6 +10,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import theme from 'src/theme';
 import { NextPageWithLayout } from 'types/index';
+import "node_modules/flag-icons/css/flag-icons.min.css";
 import '@styles/global.css';
 
 // Client-side cache, shared for the whole session of the user in the browser.

@@ -22,7 +22,9 @@ export default function AppLayout({ children }) {
         pt="38px"
         pb="60px"
         sx={{
-          width: '304px',
+          width: '100%',
+          minWidth: '304px',
+          maxWidth: '304px',
           borderRightWidth: '1px',
           borderRightStyle: 'solid',
           borderRightColor: 'brand.border_grey',
@@ -136,7 +138,7 @@ export default function AppLayout({ children }) {
           <EllipsisIcon />
         </Flex>
       </Flex>
-      <Flex>{children}</Flex>
+      <Flex width="100%">{children}</Flex>
     </Flex>
   );
 }

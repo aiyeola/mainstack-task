@@ -11,3 +11,8 @@ html {
   fill: #FF5403;
   stroke: #FF5403;
 }
+
+.fi {
+  width: 21px !important;
+  line-height: 15px !important;
+}
