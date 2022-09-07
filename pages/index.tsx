@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import AppLayout from '@layouts/AppLayout';
+import Flex from '@components/MuiComposed/Flex';
 
 export default function Index() {
   return (
-	<div>index</div>
-  )
+    <AppLayout>
+      <Flex>index</Flex>
+    </AppLayout>
+  );
 }

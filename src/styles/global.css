@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.fill_icon {
+  fill: #31373D;
+  stroke: #31373D;
+}
+
+.fill_icon:hover {
+  fill: #FF5403;
+  stroke: #FF5403;
+}
