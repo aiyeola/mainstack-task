@@ -55,13 +55,14 @@ export default function DataCard() {
       pt="24px"
       pb="45px"
       px="24px"
-      width="100%"
       flexDirection="column"
       sx={{
         borderWidth: '1px',
         borderStyle: 'solid',
         borderColor: 'brand.border_grey',
         borderRadius: '12px',
+        maxWidth: '500px',
+        width: '100%',
       }}
     >
       <Flex justifyContent="space-between" alignItems="center">

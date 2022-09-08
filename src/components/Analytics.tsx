@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
-import { ApexOptions } from 'apexcharts'
+import { ApexOptions } from 'apexcharts';
 
 import Flex from '@components/MuiComposed/Flex';
 import Text from '@components/MuiComposed/Text';
@@ -113,7 +113,7 @@ export default function Analytics() {
 
   return (
     <Flex flexDirection="column">
-      <Flex columnGap="12px">
+      <Flex columnGap="12px" rowGap="12px" flexWrap="wrap">
         {React.Children.toArray(
           Object.values(FilterEnums).map((filter) => {
             if (filter === selected) {
@@ -169,7 +169,12 @@ export default function Analytics() {
         </Text>
         <Chart options={options} series={series} type="area" height={400} />
 
-        <Flex mt="24px" columnGap="16px">
+        <Flex
+          mt="24px"
+          columnGap="16px"
+          flexWrap="wrap"
+          rowGap="16px"
+        >
           <DataCard />
           <DataCard />
         </Flex>

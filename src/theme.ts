@@ -46,18 +46,6 @@ let theme = createTheme({
         color: 'inherit',
       },
     },
-    MuiButton: {
-      defaultProps: {
-        disableElevation: true,
-        variant: 'contained',
-      },
-      styleOverrides: {
-        contained: {
-          backgroundColor: '#e0e0e0',
-          color: 'rgba(0, 0, 0, 0.87)',
-        },
-      },
-    },
   },
 });
 

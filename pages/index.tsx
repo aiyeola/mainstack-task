@@ -12,15 +12,23 @@ export default function Index() {
 
   return (
     <AppLayout>
-      <Flex flexDirection="column" px="60px" pt="22px" pb="44px" width="100%">
+      <Flex
+        flexDirection="column"
+        px={['20px', , , '60px']}
+        pt="22px"
+        pb="44px"
+        width="100%"
+      >
         <Text variant="h6" fontWeight={800}>
           Dashboard
         </Text>
         <Flex
+          flexDirection={['column', , , 'row']}
           mt="46px"
-          alignItems="center"
+          alignItems={['flex-start', , , 'center']}
           justifyContent="space-between"
           width="100%"
+          rowGap="12px"
         >
           <Flex flexDirection="column">
             <Text variant="h5" fontWeight={800}>
@@ -35,7 +43,11 @@ export default function Index() {
               Check out your dashboard summary.
             </Text>
           </Flex>
-          <Text color="brand.secondary" variant="body2">
+          <Text
+            color="brand.secondary"
+            variant="body2"
+            alignSelf={['flex-end', , , 'inherit']}
+          >
             View analytics
           </Text>
         </Flex>
