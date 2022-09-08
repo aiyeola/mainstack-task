@@ -43,8 +43,9 @@ export default function AreaChart({ categories, values }) {
     },
     xaxis: {
       categories:
-        categories.length > 0 &&
-        categories.map((date) => format(new Date(date), 'dd MMM')),
+        categories.length > 0
+          ? categories.map((date) => format(new Date(date), 'dd MMM'))
+          : [],
       labels: {
         show: true,
         style: {

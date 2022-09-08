@@ -22,6 +22,9 @@ export default function Analytics() {
   const [categories, setCategories] = useState([]);
   const [values, setValues] = useState([]);
 
+  const [topLocations, setTopLocations] = useState([]);
+  const [topSources, setTopSources] = useState([]);
+
   const { isOpen, onToggle, onClose, onOpen } = useDisclosure();
 
   const handleClick = (value: FilterEnums) => {
@@ -48,6 +51,9 @@ export default function Analytics() {
         }, {});
 
       setViewData(viewData);
+
+      setTopLocations(data.top_locations);
+      setTopSources(data.top_sources);
     }
   }, [data]);
 
@@ -196,8 +202,8 @@ export default function Analytics() {
           <AreaChart categories={categories} values={values} />
 
           <Flex mt="24px" columnGap="16px" flexWrap="wrap" rowGap="16px">
-            <DataCard />
-            <DataCard />
+            <DataCard title="Top Locations" chartData={topLocations} />
+            <DataCard title="Top Referral source" chartData={topSources} />
           </Flex>
         </Flex>
       </Flex>
