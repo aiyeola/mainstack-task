@@ -87,7 +87,7 @@ export default function DataCard({ title, chartData }: DataCardProps) {
         borderColor: 'brand.border_grey',
         borderRadius: '12px',
         flex: 1,
-        minWidth: '500px',
+        minWidth: '320px',
       }}
     >
       <Flex justifyContent="space-between" alignItems="center">
