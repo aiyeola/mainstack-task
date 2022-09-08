@@ -1,15 +1,9 @@
-import React from 'react';
-
 import AppLayout from '@layouts/AppLayout';
 import Flex from '@components/MuiComposed/Flex';
 import Text from '@components/MuiComposed/Text';
 import Analytics from '@components/Analytics';
-import { useGetData } from '@api/index';
 
 export default function Index() {
-  // const { data } = useGetData();
-  // console.log('data: ', data);
-
   return (
     <AppLayout>
       <Flex

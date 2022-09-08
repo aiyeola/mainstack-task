@@ -52,6 +52,7 @@ export default function Navigation({ handleDrawerToggle, open }) {
                   href={route.link}
                   className="fill_icon"
                   sx={{
+                    position: 'relative',
                     fill: activeRoute(route.link) && '#FF5403 !important',
                     stroke: activeRoute(route.link) && '#FF5403 !important',
                     color: activeRoute(route.link)
@@ -59,6 +60,17 @@ export default function Navigation({ handleDrawerToggle, open }) {
                       : 'brand.grey',
                     '&:hover': {
                       color: 'brand.secondary',
+                    },
+                    '&::before': {
+                      content: '""',
+                      position: 'absolute',
+                      left: '0',
+                      top: '0',
+                      width: '2px',
+                      height: '28px',
+                      backgroundColor: activeRoute(route.link)
+                        ? 'brand.secondary'
+                        : 'transparent',
                     },
                   }}
                 >
@@ -198,6 +210,7 @@ export default function Navigation({ handleDrawerToggle, open }) {
                   className="fill_icon"
                   onClick={() => handleDrawerToggle()}
                   sx={{
+                    position: 'relative',
                     fill: activeRoute(route.link) && '#FF5403 !important',
                     stroke: activeRoute(route.link) && '#FF5403 !important',
                     color: activeRoute(route.link)
@@ -205,6 +218,17 @@ export default function Navigation({ handleDrawerToggle, open }) {
                       : 'brand.grey',
                     '&:hover': {
                       color: 'brand.secondary',
+                    },
+                    '&::before': {
+                      content: '""',
+                      position: 'absolute',
+                      left: '0',
+                      top: '0',
+                      width: '2px',
+                      height: '28px',
+                      backgroundColor: activeRoute(route.link)
+                        ? 'brand.secondary'
+                        : 'transparent',
                     },
                   }}
                 >
