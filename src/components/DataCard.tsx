@@ -98,7 +98,13 @@ export default function DataCard({ title, chartData }: DataCardProps) {
           View full reports
         </Text>
       </Flex>
-      <Flex mt="42px" justifyContent="space-between" alignItems="center">
+      <Flex
+        mt="42px"
+        flexDirection={['column', , , 'row']}
+        justifyContent="space-between"
+        alignItems="center"
+        rowGap="20px"
+      >
         <Flex flexDirection="column" rowGap="19px">
           {React.Children.toArray(
             data.map((item) => (
