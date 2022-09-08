@@ -4,7 +4,12 @@ import { ApexOptions } from 'apexcharts';
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-export default function AreaChart({ categories, values }) {
+type AreaChartProps = {
+  values: number[];
+  categories: string[];
+};
+
+export default function AreaChart({ categories, values }: AreaChartProps) {
   const options: ApexOptions = {
     chart: {
       toolbar: {

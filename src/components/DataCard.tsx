@@ -13,7 +13,12 @@ import capitalizeFirstLetter from '@utils/capitalizeFirstLetter';
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-export default function DataCard({ title, chartData }) {
+type DataCardProps = {
+  title: string;
+  chartData: Record<string, unknown>[];
+};
+
+export default function DataCard({ title, chartData }: DataCardProps) {
   const [data, setData] = useState([]);
 
   const colors = ['#599EEA', '#844FF6', '#0FB77A', '#FAB70A', '#F09468'];

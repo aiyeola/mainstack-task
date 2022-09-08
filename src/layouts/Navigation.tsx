@@ -12,7 +12,15 @@ import EllipsisIcon from '@assets/EllipsisIcon';
 import HamburgerIcon from '@assets/HamburgerIcon';
 import { section1Routes, section2Routes, section3Routes } from 'src/routes';
 
-export default function Navigation({ handleDrawerToggle, open }) {
+type NavigationProps = {
+  open: boolean;
+  handleDrawerToggle: () => void;
+};
+
+export default function Navigation({
+  handleDrawerToggle,
+  open,
+}: NavigationProps) {
   const router = useRouter();
 
   const matches1028 = useMediaQuery('(min-width:1028px)');
