@@ -159,7 +159,7 @@ export default function Analytics() {
           flexDirection="column"
           pt="32px"
           pb="22px"
-          px="24px"
+          px={['15px', , , '24px']}
           mt="24px"
           sx={{
             borderWidth: '1px',
